@@ -1,0 +1,140 @@
+body{
+    margin: 0em;
+    font-size: 1.5em;
+    font-family: Georgia, Times;
+    color: white;
+    background-image: url("MorbPoster.jpg");
+}
+
+.sectionBtn{
+    visibility: hidden;
+}
+
+body .header{
+    font-size: 1.3em;
+}
+
+body li{
+    font-size: 1em;
+}
+
+.leftContent button{
+    font-size: large;
+    margin: 0;
+}
+
+div.leftContent{
+    margin: 1em;
+}
+
+div.mainColumn{
+    width: 30em;
+    padding: 1em;
+    background-color: black;
+}
+
+div.leftColumn{
+    display: flex;
+    align-items: center;
+    width: 20em;
+    background-color: black;
+
+    margin-right: 3em;
+}
+
+div.leftColumn img{
+    max-width: 13em;
+}
+
+button{
+    margin: 1em;
+
+    width: max-content;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    transition: .5s;
+    color: red;
+
+}
+
+p img{
+    margin: 1em;
+}
+
+.main img{
+    max-width: 20em;
+    max-height: 20em;
+}
+
+@media (orientation: portrait){
+    img.headerImg{
+        display: none;
+    }
+    div.leftColumn{
+        width: 30em;
+        padding: 1em;
+        margin-right: 0em;
+    }
+    div.main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.leftContent{
+        font-size: xx-large;
+    }
+    div.leftContent button{
+        font-size: xx-large;
+    }
+    .pageTop{
+        display: flex;
+        justify-content: center;
+    
+        width: screen;
+    }
+    .pageTop img{
+        width: 100%;
+    }
+}
+
+@media (orientation: landscape) {
+    div.main{
+        display: flex;
+        justify-content: center;
+    }
+    div.leftColumn{
+        display: flex;
+        flex-direction: column;
+
+        flex-shrink: 0;
+    }
+    div.mainColumn{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        flex-shrink: 0 ;
+    }
+    div.leftContent{
+        top: 0em;
+
+        position: sticky;
+    }
+
+    .pageTop{
+        display: flex;
+        justify-content: center;
+    
+        width: screen;
+    }
+    .pageTop img{
+        width: 100%;
+    }
+}
